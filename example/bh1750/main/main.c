@@ -28,8 +28,8 @@
 #include "driver/i2c.h"
 #include "bh1750.h"
 
-#define SDA_GPIO GPIO_NUM_21   // Update based on your board
-#define SCL_GPIO GPIO_NUM_22   // Update based on your board
+#define SDA_GPIO CONFIG_ESP_I2C_MASTER_SDA
+#define SCL_GPIO CONFIG_ESP_I2C_MASTER_SCL
 #define I2C_PORT I2C_NUM_0
 #define I2C_FREQ_HZ 400000
 
